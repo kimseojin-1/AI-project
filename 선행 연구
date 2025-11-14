@@ -1,2 +1,51 @@
-선행연구 20232609 노션 링크
-https://www.notion.so/3-2-2abfefb63daa809ebcd5d3e2e3dc1a56?source=copy_link
+20232609 노션 - 선행 연구 · 논문
+### 유전체 언어 모델(gLM, Genomic Language Model)
+- DNA 염기서열(A, C, G, T)을 단어처럼 토큰화하여 학습하는 언어 모델
+→ 생물학적 서열의 의미적 패턴을 내재적으로 학습
+
+- but 실제 응용 단계에서는 한 염기가 바뀌는 single nucleotide variant(SNV) 같은 미세한 변이를 잘 구분 x
+- 이러한 한계를 정량적으로 평가하고, “모델이 변이를 얼마나 예민하게 감지할 수 있는가”를 실험적으로 확인하는 것을 목표
+→ 유전체 언어 모델(gLM)의 변이 민감도 개선 및 성능 평가
+
+- 참가자는 제공된 유전체 염기서열을 직접 개발한 gLM 또는
+    사전 학습 gLM(파인 튜닝 가능)으로 임베딩 하여 제출
+- 내부적으로 매핑된 reference–variant 쌍 정보를 바탕으로 각 쌍의 코사인 거리(cosine distance)를 기반으로
+    모델이 동일 유전 영역 내의 작은 변이를 얼마나 민감하게 구분했는지를 정량적으로 평가
+
+출처: https://dacon.io/competitions/official/236630/overview/description
+---
+## SNP(**Single-Nucleotide Polymorphism)**
+- 단일 염기(A, T, G, C)의 대체
+- 게놈(=지놈; genome)에서 특정한 하나의 위치에서 발생함
+    → Population 내에서 발생하는 변이
+    
+- ex. 여러 사람의 게놈이 있다고 가정
+    하나의 위치(ex. 염색체 2번의 394번째 DNA)에서 모집단에서는 대부분 C를 가짐
+    소수는 A를 가짐
+    → SNP가 해당 위치에 존재, 두 개의 가능한 변이는 C와 A이며 위치에 대한 Allele임
+    
+- 모집단(여러 사람)에서 특정 위치의 DNA를 비교한 후 동일하면 무시, 다를 경우에만  SNP라고 함
+- 1%보다 많은 비율로 다른 DNA를 가진 경우만 SNP라 정의 (ex. >1%)
+    예) 100명 중에 1명만 다른 DNA를 가지고 있다고 하면 SNP라 하지 x
+  
+## SNV(**Single-Nucleotide Variant)**
+- without any limitations of frequency; 1% 제한 없음
+- SNP은 SNV 보다는 작은 범위를 커버
+- 단일 염기의 변이
+
+## SNP
+1% 이상의 빈도수로 다른 DNA인 변이
+일부 1% 이상을 SNP라 하는 경우 있음
+
+## SNV
+빈도수 제한 없는 일반적인 단일 변이
+일부 1% 미만을 SNV라 할 때도 있음
+
+출처: https://m.blog.naver.com/sw4r/221543221431
+---
+### 참고 자료
+- DNA 구조
+https://blog.naver.com/lee01097/222002690550
+https://times.kaist.ac.kr/news/articleView.html?idxno=10109
+[https://stementor.tistory.com/entry/12-DNA의-구조-1](https://stementor.tistory.com/entry/12-DNA%EC%9D%98-%EA%B5%AC%EC%A1%B0-1)
+https://blog.naver.com/sw4r/221577920630
