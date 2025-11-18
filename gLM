@@ -1,0 +1,31 @@
+유전체 언어 모델(gLM, Genomic Language Model)
+- 일반적인 자연어 처리(NLP)에서 사용되는 **대규모 언어 모델(LLM) 기술**을 **DNA 또는 단백질과 같은 생물학적 서열**에 적용한 것
+- 유전체 서열을 텍스트처럼 다루어 그 안에 담긴 생물학적 "언어"의 문법과 의미론을 이해하고 예측하는 데 사용
+
+### gLM에서의 토큰화(Tokenization)
+
+- **DNA/RNA 서열**을 모델이 처리할 수 있는 작은 단위, 즉 **토큰**으로 분할하는 과정
+- 일반적인 자연어 모델(NLP)의 토큰화와는 달리, 유전체 서열은 단어와 같은 명확한 경계가 없기 때문에 몇 가지 특수한 방법을 사용함
+
+문자 기반
+- 기본 단위: 개별 염기 (A, T, C, G)
+- 장점: 최고 해상도, OOV 없음, 작은 어휘(단어)
+- 단점: 시퀀스 길이가 매우 긺, 연산 비용 높음
+
+K-mer 머
+- 기본 단위: K 길이의 연속된 염기
+- 장점: 시퀀스 압축, 지역적 패턴 포착 용이
+- 단점: 어휘 폭발(4k), 생물학적 의미 불일치 가능
+
+BPE/WordPiece
+- 기본 단위: 학습된 염기 조합
+- 장점: 유연한 길이의 패턴 포착, 효율적인 어휘 관리
+- 단점: 복잡한 학습 과정, 최적의 토큰 집합 결정 필요
+
+### 참고자료
+
+- 사이언스 온 과학 뉴스 https://blog.naver.com/kistiscienceon/223405634652
+- (👩‍💻인공지능) 유전체 언어 해독 : 새로운 AI 시스템으로 생물학의 소스 코드 잠금 해제 https://phys.org/news/2024-04-deciphering-genomic-language-ai-biology.html
+- 자폐 아동의 인지 및 적응 능력 예측을 위한 유전체 및 발달 기반 모델
+https://cafe.naver.com/khompediatrics/1333?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Imtob21wZWRpYXRyaWNzIiwiYXJ0aWNsZUlkIjoxMzMzLCJpc3N1ZWRBdCI6MTc2MzQ4MjAwMzgzNH0.z4G3uGzE9tdo4Ebd0DNWJODey_5gqml2PXufs4Gafag
