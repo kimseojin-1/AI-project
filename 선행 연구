@@ -13,6 +13,8 @@
     모델이 동일 유전 영역 내의 작은 변이를 얼마나 민감하게 구분했는지를 정량적으로 평가
 
 출처: https://dacon.io/competitions/official/236630/overview/description
++) 유전체 & 인공지능 LLM과 함께 공부해보기 https://datainsider.tistory.com/218
+
 ---
 ## SNP(**Single-Nucleotide Polymorphism)**
 - 단일 염기(A, T, G, C)의 대체
