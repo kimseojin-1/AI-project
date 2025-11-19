@@ -29,3 +29,7 @@ BPE/WordPiece
 - 자폐 아동의 인지 및 적응 능력 예측을 위한 유전체 및 발달 기반 모델
 https://cafe.naver.com/khompediatrics/1333?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
 eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Imtob21wZWRpYXRyaWNzIiwiYXJ0aWNsZUlkIjoxMzMzLCJpc3N1ZWRBdCI6MTc2MzQ4MjAwMzgzNH0.z4G3uGzE9tdo4Ebd0DNWJODey_5gqml2PXufs4Gafag
+
+### 추가 자료
+- GLM-4.1V-Thinking: 강화학습 기반의 범용 멀티모달 추론 모델 (feat. Zhipu AI) (한국 PyTorch 사용자 모임)
+https://discuss.pytorch.kr/t/glm-4-1v-thinking-feat-zhipu-ai/7233
