@@ -7,6 +7,8 @@
 - DNABERT/DNABERT2: DNA 서열을 토큰화하고 분석하는 데 사용되는 BERT 기반 모델
 - 특정 연구에서 개발된 gLM (예: y-hwang/gLM)과 같은 모델은 GitHub 등의 플랫폼에서 코드가 공개되는 경우가 많음
 
+### Nucleotide Transformer - https://github.com/instadeepai/nucleotide-transformer
+
 ### gLM에서의 토큰화(Tokenization)
 
 - **DNA/RNA 서열**을 모델이 처리할 수 있는 작은 단위, 즉 **토큰**으로 분할하는 과정
